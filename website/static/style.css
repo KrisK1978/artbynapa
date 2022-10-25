@@ -40,3 +40,24 @@ body {
 .nav-link:hover {
 	color: burlywood;
 }
+
+/*Buttons*/
+
+.btn-primary {
+    color: #000000;
+    background-color: #DEE2FF;
+    border-radius: .5rem;
+    border: .2rem solid #8E9AAF;
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #8E9AAF;
+    border-color: #ffffff;
+    border-radius: .5rem;
+    border: .2rem solid #DEE2FF;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
