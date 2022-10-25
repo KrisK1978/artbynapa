@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    background-color: #F8F9FA;
     margin-bottom: 0;
     width: 100vw;
     height: 100vh;
@@ -23,13 +24,21 @@ body {
 }
 
 /*Navbar*/
+.bg-dark {
+	background-color: #F8F9FA !important;
+}
+
 .navbar-dark
 .navbar-nav
 .nav-link:focus,
 .navbar-dark
 .navbar-nav
 .nav-link {
-	color: white;
+	color: #212529;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: .4rem;
+    padding-left: .3rem;
 }
 
 .navbar-dark
@@ -38,24 +47,32 @@ body {
 .navbar-dark
 .navbar-nav
 .nav-link:hover {
-	color: burlywood;
+	color: #6C757D;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
+
+
+
 
 /*Buttons*/
 
 .btn-primary {
-    color: #000000;
-    background-color: #DEE2FF;
+    color: #212529;
+    background-color: #E9ECEF;
     border-radius: .5rem;
-    border: .2rem solid #8E9AAF;
+    border: .1rem solid #6C757D;
+    margin-bottom: 1rem;
 }
 
 .btn-primary:hover {
-    color: #ffffff;
-    background-color: #8E9AAF;
+    color: #212529;
+    background-color: #CED4DA;
     border-color: #ffffff;
     border-radius: .5rem;
-    border: .2rem solid #DEE2FF;
+    border: .1rem solid #6C757D;
     cursor: pointer;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
