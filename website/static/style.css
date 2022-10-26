@@ -1,5 +1,5 @@
 /* Importing fonts style */
-@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Shalimar&display=swap');
 
 
 /* HTML & Body styling */
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-color: #F8F9FA;
+    background-color: #faf5f0;
     margin-bottom: 0;
     width: 100vw;
     height: 100vh;
@@ -25,7 +25,7 @@ body {
 
 /*Navbar*/
 .bg-dark {
-	background-color: #F8F9FA !important;
+	background-color: #faf5f0 !important;
 }
 
 .navbar-dark
@@ -35,7 +35,7 @@ body {
 .navbar-nav
 .nav-link { 
 	color: #212529;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin: .4rem;
     padding-left: .3rem;
@@ -55,6 +55,35 @@ body {
     transition: all .4s ease-in-out;
 }
 
+.navbar {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+    justify-content: right;
+	padding: .5rem 1rem;
+}
+
+a#artbynapa-logo.nav-item.nav-link {
+    font-family:'Shalimar', cursive;
+    font-size: 3rem;
+    padding-block: initial;
+    margin-right: 3rem;
+}
+
+.fa-message-pen:before {
+    border: 0.4rem solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
 
 /*Buttons*/
 .btn-primary {
@@ -75,8 +104,4 @@ body {
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-}
-
-navbar {
-    text-align: center;
 }

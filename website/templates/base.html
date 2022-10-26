@@ -1,81 +1,82 @@
-<!DOCTYPE html>
+
+
+
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Import Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='favicons/apple-icon-180x180.png')}}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='favicons/favicon-16x16.png')}}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='favicons/favicon-32x32.png')}}">
-    <!--Bootstrap-->
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-    />
-    <!--Font Awesome-->
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    crossorigin="anonymous"
-    />
-    <!--Custom CSS-->
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <title>{% block title %}artbynapa{% endblock %}</title>
-</head>
-<body>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-      <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbar"
-        >
-          <span class="navbar-toggler-icon"><img src="{{ url_for('static', filename='images/logo/napa-logo.png') }}" alt="napa-logo" height="50"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbar">
-          <div class="navbar-nav">
-              <a class="nav-item nav-link" id="home" href="/">About</a>
-              <a class="nav-item nav-link" id="home" href="/portfolio">Portfolio</a>
-              <a class="nav-item nav-link" id="login" href="/login">Login</a>
-              <a class="nav-item nav-link" id="sinUp" href="/sign-up">Sign Up</a>
-              <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
-              <a class="nav-item nav-link" id="logout" href="/contact">Contact</a>
-          </div>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Import Favicons-->
+      <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='favicons/apple-icon-180x180.png')}}">
+      <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='favicons/favicon-16x16.png')}}">
+      <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='favicons/favicon-32x32.png')}}">
+      <!--Bootstrap-->
+      <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+      />
+      <!--Font Awesome-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" />
+      <!--Custom CSS-->
+      <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+      <title>{% block title %}artbynapa{% endblock %}</title>
+  </head>
+  <body>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+          >
+            <span class="navbar-toggler-icon"><img src="{{ url_for('static', filename='images/logo/artbynapa-toggler.png') }}" 
+              alt="artbynapa-toggler" height="50"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbar">
+            <div class="navbar-nav">
+                <a href="{{ url_for('views.home') }}" class="nav-item nav-link" id="artbynapa-logo">Art By Napa</a>
+                <a class="nav-item nav-link" id="home" href="/">About</a>
+                <a class="nav-item nav-link" id="portfolio" href="/portfolio">Portfolio</a>
+                <a class="nav-item nav-link" id="login" href="/login">Login</a>
+                <a class="nav-item nav-link" id="sinUp" href="/sign-up">Sign Up</a>
+                <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                <a class="nav-item nav-link" id="contact" href="/contact"><i class="fa-regular fa-pen-to-square"></i> Contact</a>
+            </div>
+        </div>
+      </nav>
+      <div class="container">
+          {% block content %}
+          {% endblock %}
       </div>
-    </nav>
-    <div class="container">
-        {% block content %}
-        {% endblock %}
-    </div>
-   <!--jQuery-->
-   <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <!--Popper-->
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <!--Bootstrap-->
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
-  <!--Custom JS-->
-  <script
-    type="text/javascript"
-    src="{{ url_for('static', filename='index.js') }}"
-  ></script>
-</body>
-</html>
-
-
-
+     <!--jQuery-->
+     <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <!--Popper-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <!--Bootstrap-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!--Custom JS-->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+  </body>
+  </html>
