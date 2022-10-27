@@ -24,7 +24,7 @@
       crossorigin="anonymous" 
       referrerpolicy="no-referrer" />
       <!--Custom CSS-->
-      <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
       <title>{% block title %}artbynapa{% endblock %}</title>
   </head>
   <body>
@@ -76,7 +76,7 @@
     <!--Custom JS-->
     <script
       type="text/javascript"
-      src="{{ url_for('static', filename='index.js') }}"
+      src="{{ url_for('static', filename='js/index.js') }}"
     ></script>
   </body>
   </html>
