@@ -91,7 +91,7 @@ a#artbynapa-logo.nav-item.nav-link {
     background-color: #E9ECEF;
     border-radius: .5rem;
     border: .1rem solid #6C757D;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .btn-primary:hover {
@@ -104,4 +104,43 @@ a#artbynapa-logo.nav-item.nav-link {
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+}
+
+/*Footer styling*/
+footer.page-footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+}
+
+.social-media-links i {
+    font-size: .9rem;
+    color: #212529;
+    border: .1rem solid #6C757D;
+    border-radius: .5rem;
+    bottom: auto;
+    margin-left: .3rem;
+    margin-bottom: .3rem;
+    padding: .5rem;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.social-media-links i:hover {
+    background-color: #CED4DA;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.copyright-text {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #212529;
+    font-family:'Shalimar', cursive;
+    margin-top: .3rem;
+
 }
