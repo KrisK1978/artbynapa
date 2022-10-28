@@ -108,7 +108,7 @@ a#artbynapa-logo.nav-item.nav-link {
 
 /*Footer styling*/
 footer.page-footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: auto;
     bottom: 0;
@@ -121,7 +121,7 @@ footer.page-footer {
     border-radius: .5rem;
     bottom: auto;
     margin-left: .3rem;
-    margin-bottom: .3rem;
+    
     padding: .5rem;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -143,4 +143,14 @@ footer.page-footer {
     font-family:'Shalimar', cursive;
     margin-top: .3rem;
 
+}
+
+.artbynapa-card {
+    background-color: #faf5f0;
+}
+
+.artbynapa-card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family:'Shalimar', cursive;
 }

@@ -3,6 +3,31 @@
 
 {% block content %}
 <br>
-   <h3>About me...</h3>
+   <div class="row justify-content-center">
+      <div class="artbynapa-card mb-3">
+         <div class="row g-0">
+           <div class="col-md-4">
+             <img src="{{ url_for('static', filename='images/paintings/momentum.jpg') }}"
+             class="img-fluid rounded-start" alt="about-me">
+           </div>
+           <div class="col-md-8">
+             <div class="card-body">
+               <h5 class="artbynapa-card-title">Art By NaPA</h5>
+               <p class="card-text">
+                  NAPA is an artistic pseudnim of a woman artist who lives and works in Dresden Germany.
+                  <br>
+                  Throughout her studies at Academy of Fine Arts in Wrocław Poland and later, in the way 
+                  of artistic work she created her own unique way of expressing emotions on canvas. 
+                  Her most popular technique is building tension through various shapes using modest 
+                  variety of colors.
+                  Her works attract attention and build a perfect counterpoint for 
+                  balanced surroundings offering dynamics, rythm and play to which the artists invites.  
+               </p>
+               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+             </div>
+           </div>
+         </div>
+       </div>
+   </div>
 
 {% endblock %}
