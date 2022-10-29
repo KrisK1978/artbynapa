@@ -1,7 +1,4 @@
-
-
-
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
       <meta charset="UTF-8">
@@ -23,8 +20,10 @@
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
       crossorigin="anonymous" 
       referrerpolicy="no-referrer" />
+      <!--Lightbox CSS-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}">
       <!--Custom CSS-->
-      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
       <title>{% block title %}artbynapa{% endblock %}</title>
   </head>
   <body>
@@ -94,10 +93,15 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <!--Custom JScript-->
+    <!--Lightbox JScript-->
     <script
       type="text/javascript"
       src="{{ url_for('static', filename='js/index.js') }}"
+    ></script>
+    <!--Custom JScript-->
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='js/lightbox-plus-jquery.js') }}"
     ></script>
   </body>
   </html>

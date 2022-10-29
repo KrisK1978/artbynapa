@@ -1,5 +1,5 @@
 /* Importing fonts style */
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Shalimar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 
 
 /* HTML & Body styling */
@@ -23,6 +23,11 @@ body {
     height: 100vh;
     z-index: 1;
     font-family: 'Hind', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
 }
 
 /*Navbar*/
@@ -71,8 +76,8 @@ body {
 }
 
 a#artbynapa-logo.nav-item.nav-link {
-    font-family:'Shalimar', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: bold;
     padding-block: initial;
     margin-right: 3rem;
 }
@@ -116,16 +121,14 @@ a#artbynapa-logo.nav-item.nav-link {
 }
 
 .artbynapa-card-title {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    font-family:'Shalimar', cursive;
     margin-top: 1rem;
 }
 
 .name {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    font-family:'Shalimar', cursive;
 }
 
 .artbynapa-card-text-1,
@@ -190,7 +193,6 @@ footer.page-footer.container-fluid {
     font-size: 1.1rem;
     font-weight: bold;
     color: #212529;
-    font-family:'Shalimar', cursive;
     margin-top: .3rem;
 
 }
