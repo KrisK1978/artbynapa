@@ -4,9 +4,22 @@
 {% block content %}
 <br>
     <h3 align="center">This is a my portfolio!</h3>
-
-   
-    
+    <div class="portfolio-container">
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='images/paintings/splish_splash.jpg') }}"
+             class="image-1" alt="Splish Splash">
+            <img src="{{ url_for('static', filename='images/paintings/momentum.jpg') }}"
+             class="image-2" alt="Momentum">
+            <img src="{{ url_for('static', filename='images/paintings/no_name_1.jpg') }}"
+             class="image-3" alt="No Name 1">
+            <img src="{{ url_for('static', filename='images/paintings/no_name_2.jpg') }}"
+             class="image-4" alt="No Name 2">
+            <img src="{{ url_for('static', filename='images/paintings/red_horizon_blue_horizon.jpg') }}"
+             class="image-5" alt="Red Horizon Blie Horizon">
+             <img src="{{ url_for('static', filename='images/paintings/red_square_in_blue_space.jpg') }}"
+             class="image-5" alt="Red Square in Blue Space">
+        </div>
+    <div>   
     
 
 {% endblock %}

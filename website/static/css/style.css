@@ -6,6 +6,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    
 }
 
 html {
@@ -35,7 +37,7 @@ body {
 .navbar-nav
 .nav-link { 
 	color: #212529;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: .4rem;
     padding-left: .3rem;
@@ -106,8 +108,57 @@ a#artbynapa-logo.nav-item.nav-link {
     transition: all .4s ease-in-out;
 }
 
+/*Homepage styling*/
+.artbynapa-card {
+    background-color: #faf5f0;
+    margin-top: 1.3rem;
+    margin: 1rem;
+}
+
+.artbynapa-card-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family:'Shalimar', cursive;
+    margin-top: 1rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Shalimar', cursive;
+}
+
+.artbynapa-card-text-1,
+.artbynapa-card-text-2
+.artbynapa-card-text-3 {
+    font-size: 1.1rem;
+    margin: .2rem
+}
+
+/*Styling Portfolio*/
+.portfolio-container {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
 /*Footer styling*/
-footer.page-footer {
+footer.page-footer.container-fluid {
     position: relative;
     width: 100%;
     height: auto;
@@ -115,14 +166,13 @@ footer.page-footer {
 }
 
 .social-media-links i {
-    font-size: .9rem;
+    font-size: .8rem;
     color: #212529;
     border: .1rem solid #6C757D;
     border-radius: .5rem;
     bottom: auto;
     margin-left: .3rem;
-    
-    padding: .5rem;
+    padding: .4rem;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -145,12 +195,3 @@ footer.page-footer {
 
 }
 
-.artbynapa-card {
-    background-color: #faf5f0;
-}
-
-.artbynapa-card-title {
-    font-size: 3rem;
-    font-weight: bold;
-    font-family:'Shalimar', cursive;
-}
